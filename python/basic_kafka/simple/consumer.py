@@ -11,9 +11,11 @@ def main():
     })
 
     consumer.subscribe(['test-topic'])
-    message = consumer.poll(1.0)
 
-    print(f"Message {message.value()}")
+    while(True):
+        message = consumer.poll(1.0)
+        if message:
+            print(f"Message {message.value()}")
 
 if __name__ == '__main__':
     main()
