@@ -1,0 +1,21 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[requires]
+
+python_version = "3.6"
+
+
+[packages]
+
+confluent-kafka = "==0.11.4"
+sanic = "==0.7.0"
+
+
+[dev-packages]
+
+neovim = "*"
