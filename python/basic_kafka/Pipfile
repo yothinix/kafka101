@@ -12,7 +12,7 @@ python_version = "3.6"
 
 [packages]
 
-confluent-kafka = "==0.11.4"
+confluent-kafka = "*"
 sanic = "==0.7.0"
 
 

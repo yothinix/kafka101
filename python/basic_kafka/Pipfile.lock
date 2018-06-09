@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3d35ccb7266be8b883d403624119b9faaeafc82e7360de86129c44415f6d2b82"
+            "sha256": "47340a94db52d8baeaa4689a13ae1a38c9822775a09f432a40fc8b22438d789f"
         },
         "requires": {
             "python_version": "3.6"
