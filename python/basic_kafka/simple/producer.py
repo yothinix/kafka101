@@ -9,7 +9,9 @@ def main():
         'bootstrap.servers': 'localhost:9092'
     })
 
-    producer.produce('test-topic', f'Hello, {current_time}'.encode('utf-8'))
+    for i in range(10000):
+        producer.produce('test-topic', f'Hello, {i}'.encode('utf-8'))
+        producer.poll(0)
     producer.flush()
 
 if __name__ == '__main__':
